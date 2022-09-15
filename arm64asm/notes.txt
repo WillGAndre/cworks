@@ -1,0 +1,13 @@
+    
+    -   https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#arm64-64_bit
+    -   https://opensource.apple.com/source/xnu/xnu-1504.3.12/bsd/kern/syscalls.master
+
+    
+    -   https://peterdn.com/post/2020/08/22/hello-world-in-arm64-assembly/
+    -   https://ncona.com/2019/12/debugging-assembly-with-gdb/
+
+    -   https://www.exploit-db.com/exploits/47049
+
+    -   https://github.com/daem0nc0re/macOS_ARM64_Shellcode/blob/master/bindshell.s
+    -   https://gist.github.com/ars3n11/b0e9f56d3b024e246754f7bea6a7243e/revisions
+    -   https://medium.com/@pop_eip/x86-linux-bind-tcp-shellcode-1dc63635ba4f
