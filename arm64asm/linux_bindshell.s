@@ -1,4 +1,5 @@
 // Fix from: github.com/maxcompston (added 4 more bytes for each stack allocation)
+// For AArch64, sp must be 16-byte aligned whenever it is used to access memory. This is enforced by AArch64 hardware.
 .section .text
 .global _start
 _start:
