@@ -53,7 +53,7 @@ int __start() {
 }
 
 void opts() {
-    puts("Linux\n - execve shell\nDarwin\n - execve shell\t\t(s)\n - execve bindshell\t(b)\n\t(at 127.0.0.1:4444)");
+    puts("Linux/Darwin\n - execve shell\t\t(s)\n - execve bindshell\t(b)\n\t(at 127.0.0.1:4444)");
 }
 
 void rollback(char *purgeEntry) {
