@@ -65,7 +65,6 @@ void rollback(char *purgeEntry) {
 // - verify if gcc/clang installed before running code
 // - catch signals (https://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code/)
 // - Test reverse shell
-// - explain shell code
 // Update: Doesn't work in Fedora (https://www.exploit-db.com/papers/13098)
 // Update: Linux works (shellcode must have correct registers, darwin registers have different names); _start works as loader
 int main(int argc, char *argv[]) {
