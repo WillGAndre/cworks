@@ -1,0 +1,15 @@
+	trace output
+		- sudo cat  /sys/kernel/debug/tracing/trace_pipe
+
+	xdp
+		- sudo ip link set dev lo xdpgeneric obj xdp_prog_kern.o sec xdp
+		- sudo ip link set dev lo xdpgeneric off
+
+	skb
+		- sudo tc qdisc add dev lo clsact
+		- sudo tc filter add dev lo egress matchall action bpf object-file xdp_prog_kern.o
+
+	(
+	 https://gist.github.com/teknoraver/62082a414d6fe5a3639b3cfac0041934
+	 https://serverfault.com/questions/362452/deleting-filters-in-tc
+	)
