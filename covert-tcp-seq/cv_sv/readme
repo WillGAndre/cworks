@@ -1,0 +1,6 @@
+ Compile	 	:	gcc -Wall -o svr_covert Covert_Server.c
+
+ Execute		:	./svr_covert -source [ip] -listen_port [port default 80]
+ :	-ofile [outfilename]
+
+	- sudo ./svr_covert -source 192.168.64.16 -ofile test.txt
